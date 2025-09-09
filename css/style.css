@@ -1,5 +1,6 @@
 :root {
     --black: #000000;
+    --medium-black: #0c0c0c;
     --gray: #1d1d1d;
     --light-gray: #828282;
     --white: #fbf6f2;
@@ -27,6 +28,12 @@ body {
     padding: 15px 20px;
     border-radius: 10px;
     width: 100%;
+
+    transition: all 300ms ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
 }
 
 header {
@@ -69,22 +76,83 @@ header {
 
     display: flex;
     gap: 1rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.interest-container:hover {
+    background: var(--medium-black);
 }
 
 .experiences {
     margin-top: 2rem;
 
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: top;
     gap: 2rem;
 
-    width: 100%;
+    width: 900px; 
+}
+
+.content-container {
+    padding-top: 10px;
+    padding-left: 20px;
+
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
 }
 
 .time {
+    padding-top: 10px;
     color: var(--light-gray);
 }
+
+.details {
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    gap: 2rem;
+
+    width: 900px; 
+}
+
+.education {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+
+.footer-container {
+    margin-top: 2rem;
+    width: 900px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    margin-right: 5px;
+}
+
+.footer-content {
+    background: var(--black);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.footer-content:hover {
+    background: var(--medium-black);
+}
+
+
+
+
 
 
 
